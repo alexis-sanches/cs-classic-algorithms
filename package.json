@@ -1,0 +1,19 @@
+{
+  "name": "algo",
+  "version": "1.0.0",
+  "description": "aaa",
+  "main": "index.js",
+  "scripts": {
+    "test:lint": "eslint .",
+    "test:mocha": "mocha",
+    "test": "npm run test:lint && npm run test:mocha"
+  },
+  "author": "A.Sannikov",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "4.2.0",
+    "eslint": "5.12.1",
+    "eslint-config-htmlacademy": "0.5.2",
+    "mocha": "5.2.0"
+  }
+}
