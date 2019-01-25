@@ -3,7 +3,7 @@ const { binarySearch } = require(`../../src/search/binary-search`);
 
 describe(`Binary Search`, () => {
   it(`should return element for numbers`, () => {
-    assert.equal(binarySearch([1, 2, 3, 4, 5], 4), 3);
+    assert.equal(binarySearch(Array(1000).fill(0).map((it, i) => i + 1), 4), 3);
   });
 
   it(`should return element for strings`, () => {
@@ -11,6 +11,6 @@ describe(`Binary Search`, () => {
   });
 
   it(`should not return element if not found`, () => {
-    assert.equal(binarySearch(['Alex', 'Michael', 'Oprah', 'Sarah', 'Tim'], 'John'), undefined);
+    assert.equal(binarySearch(['Alex', 'Michael', 'Oprah', 'Sarah', 'Tim'], 'John'), -1);
   });
 });
